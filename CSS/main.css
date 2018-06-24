@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ***** header***** */
+
+header {
+    margin: 50px;
+    padding: 20px;    
+}
+
+.headings {
+    display: flex;
+    width: 100%;
+}
+
+.title {
+    display: block;
+    width: 50%;
+}
+
+.title img {
+    width: 300px;
+    align-content: center;
+}
+
+.title h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.headings img {
+    margin: 50px;
+}
+
+
+
+.search-container input[type=text] {
+    width: 90%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("https://www.google.de/search?rlz=1C1CHBF_deDE783DE783&biw=1707&bih=815&tbm=isch&sa=1&ei=yA2xWtWcBczDwQLq5Ym4CQ&q=Lupe+grafik&oq=Lupe+grafik&gs_l=psy-ab.3..0l2j0i30k1.14743.17361.0.17599.11.11.0.0.0.0.107.898.10j1.11.0....0...1c.1.64.psy-ab..0.11.897...0i67k1j0i5i30k1j0i8i30k1j0i24k1j0i8i10i30k1.0.sZdhqy1Cb1g#imgrc=zjw4sSK5-QIsNM:");
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 90%;
+}
+
+/* ******* header closed - books ******** */
+
+.books {
+
+    display: flex;
+    background-color: #2B244C;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+.flip-container {
+    perspective: 1000px;
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    width: 320px;
+    height: 480px;
+}
+
+.flipper {
+    transition: 1s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back button {
+    padding: 5px;
+    margin: 80px;
+    border-radius: 4px;
+}
+
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #C5C8C9;
+    margin: 10px;
+    padding: 10px;
+    line-height: 2;
+    display: inline-block;
+    text-align: center;
+}
+
+/*.singeltitle {
+    padding: 30px;
+    margin: 10px;
+    background-color: white;
+    color: #2B244C;
+
+    width: 30%;
+    height: auto;
+
+    display: inline-block;
+    box-shadow: 10px 10px 5px grey;
+}*/
+
+.footer {
+    padding: 80px;
+    margin: 100px;
+
+}
+
+.front > img {
+    width: 320px;
+    height: 480px;
+}
+
+#books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
